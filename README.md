@@ -5,7 +5,7 @@ This project implements a quantum teleportation protocol to encode and decode te
 ## How It Works
 
 The teleportation protocol splits the message information into two distinct components:
-1. **The Quantum State:** The statevectors of the teleported qubits are serialized and saved locally to a file named `statevectors.json`[cite: 3, 4].
+1. **The Quantum State:** The statevectors of the teleported qubits are serialized and saved locally to a file named `statevectors.json`.
 2. **The Classical Keystring:** A sequence of classical bits generated via Bell-state measurements (using CNOT and Hadamard gates) during the encoding process.
 
 To decode the message, the receiver must possess both the `statevectors.json` file and the exact classical keystring to apply the correct conditional X and Z correction gates.
